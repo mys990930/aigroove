@@ -15,7 +15,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty(value="user_id")
-    private Integer userId;
+    private Integer user_id;
     private String username;
     @JsonProperty(value="hashed_password")
     private String hashed_password;

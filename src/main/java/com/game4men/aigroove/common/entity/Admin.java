@@ -1,9 +1,6 @@
 package com.game4men.aigroove.common.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import java.time.LocalDate;
@@ -14,6 +11,7 @@ import java.time.LocalDate;
 @Table(name = "Admin")
 public class Admin {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "admin_id")
     private Integer adminId;
 
