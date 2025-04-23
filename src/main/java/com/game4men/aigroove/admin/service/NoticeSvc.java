@@ -46,6 +46,11 @@ public class NoticeSvc {
                 .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 공지사항입니다."));
     }
 
+    public Notice findRecentNotice(){
+        return noticeRepository.findTopByOrderByCreatedAtDesc()
+                .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 공지사항입니다."));
+    }
+
     // 3. 공지사항 작성
     @Transactional
     public Notice createNotice(String title, String content, Admin author) {

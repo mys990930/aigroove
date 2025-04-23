@@ -61,6 +61,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String path = request.getRequestURI();
         return path.startsWith("/game/user/login") || 
                path.startsWith("/game/user/signup") ||
+               path.startsWith("/game/notice") ||
+               path.startsWith("/game/ranking") ||
                path.startsWith("/admin");
     }
     

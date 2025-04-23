@@ -4,11 +4,9 @@ import com.game4men.aigroove.game.DTO.UserDTO;
 import com.game4men.aigroove.game.service.UserSvc;
 import com.game4men.aigroove.game.DTO.LoginRequest;
 import com.game4men.aigroove.common.entity.User;
-import com.game4men.aigroove.common.repository.UserRepository;
 import com.game4men.aigroove.game.DTO.JwtResponse;
 
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -24,17 +22,16 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("/game/user")
-@Tag(name = "사용자 관리", description = "사용자 관리 API")
+@Tag(name = "유저 API", description = "유저 기능 API")
 @RequiredArgsConstructor
 public class UserController {
     @Autowired
     UserSvc userSvc;
 
-    @Operation(summary = "로그인", description = "로그인 처리 후 토큰을 반환합니다.")
+    @Operation(summary = "로그인 [토큰 불필요]", description = "로그인 처리 후 토큰을 반환합니다.")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "로그인 성공", content = @Content(schema = @Schema(implementation = JwtResponse.class))),
             @ApiResponse(responseCode = "401", description = "패스워드 오류")
-
     })
     @PostMapping("/login")
     public ResponseEntity<JwtResponse> login(
@@ -46,12 +43,11 @@ public class UserController {
         // 응답 반환
         return ResponseEntity.ok(jwtResponse);
     }
-
-    @Operation(summary = "회원가입", description = "회원가입 처리")
+    
+    @Operation(summary = "회원가입 [토큰 불필요]", description = "회원가입 처리")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "회원가입 성공", content = @Content(schema = @Schema(implementation = UserDTO.class))),
             @ApiResponse(responseCode = "400", description = "오류")
-
     })
     @PostMapping("/signup")
     public ResponseEntity<Void> signup(

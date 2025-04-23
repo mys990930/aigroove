@@ -2,6 +2,9 @@ package com.game4men.aigroove.admin.controller;
 
 import com.game4men.aigroove.common.entity.Admin;
 import com.game4men.aigroove.common.entity.Notice;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import com.game4men.aigroove.admin.service.AdminSvc;
 import com.game4men.aigroove.admin.service.NoticeSvc;
 import jakarta.validation.Valid;
@@ -19,6 +22,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/admin/notice")
+@Tag(name = "관리자 - 공지사항 관리", description = "공지사항 관리 API")
 public class NoticeController {
     private final NoticeSvc noticeService;
     private final AdminSvc adminService;
