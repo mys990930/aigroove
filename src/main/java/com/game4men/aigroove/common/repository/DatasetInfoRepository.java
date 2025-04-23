@@ -1,0 +1,12 @@
+package com.game4men.aigroove.common.repository;
+
+import com.game4men.aigroove.common.entity.DatasetInfo;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface DatasetInfoRepository extends JpaRepository<DatasetInfo, Long> {
+    List<DatasetInfo> findByUploaderAdminIdOrderByUploadDateDesc(Integer adminId);
+} 

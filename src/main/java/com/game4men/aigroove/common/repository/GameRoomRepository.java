@@ -1,10 +1,10 @@
 package com.game4men.aigroove.common.repository;
 
-import com.game4men.aigroove.common.entity.Inquiry;
+import com.game4men.aigroove.common.entity.GameRoom;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface InquiryRepository extends JpaRepository<Inquiry, Integer> {
-    int countByUser_UserId(Integer userId);
+public interface GameRoomRepository extends JpaRepository<GameRoom, Long> {
+    int countByHostUserId(Long userId);
 } 
