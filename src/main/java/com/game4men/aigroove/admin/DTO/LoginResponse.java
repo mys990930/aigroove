@@ -9,6 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+// 여기에 user_id도 주게 변경
 public class LoginResponse {
     private int result_code;
     private String login_token;

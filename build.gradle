@@ -48,6 +48,8 @@ dependencies {
 	/*Swagger dependency*/
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 	/*Swagger dependency*/
+
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
 }
 
 tasks.named('test') {

@@ -8,13 +8,32 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class NoticeSvc {
     private final NoticeRepository noticeRepository;
+
+    public List<Map<String, Object>> findNoticesByAdminId(Integer adminId) {
+        List<Notice> notices = noticeRepository.findByAuthorAdminIdOrderByCreatedAtDesc(adminId);
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        for (Notice notice : notices) {
+            Map<String, Object> noticeMap = new HashMap<>();
+            noticeMap.put("notice_id", notice.getNoticeId());
+            noticeMap.put("title", notice.getTitle());
+            noticeMap.put("author_admin_id", notice.getAuthor().getAdminId());
+            noticeMap.put("created_at", notice.getCreatedAt());
+            result.add(noticeMap);
+        }
+
+        return result;
+    }
 
     // 1. 공지사항 목록 조회
     public List<Notice> findAllNotices() {
@@ -30,6 +49,7 @@ public class NoticeSvc {
     // 3. 공지사항 작성
     @Transactional
     public Notice createNotice(String title, String content, Admin author) {
+        // 콘솔에 title과 content 값 출력
         Notice notice = new Notice();
         notice.setTitle(title);
         notice.setContent(content);
