@@ -1,7 +1,7 @@
 package com.game4men.aigroove.game.controller;
 import com.game4men.aigroove.game.DTO.InquiryDTO;
 import com.game4men.aigroove.game.DTO.UserDTO;
-import com.game4men.aigroove.game.service.InquirySvc;
+import com.game4men.aigroove.game.service.GameInquirySvc;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/game")
 public class InquiryController {
     @Autowired
-    InquirySvc inquirySvc;
+    GameInquirySvc inquirySvc;
     
     @Operation(summary = "문의 등록", description = "문의를 DB에 등록하여 관리자가 열람할 수 있게 합니다.")
     @ApiResponses(value = {

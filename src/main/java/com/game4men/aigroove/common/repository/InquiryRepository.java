@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface InquiryRepository extends JpaRepository<Inquiry, Integer> {
-    int countByUser_UserId(Integer userId);
 } 

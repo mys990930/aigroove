@@ -40,7 +40,7 @@ public class AdminUserSvc {
     // User 엔티티를 UserResponse DTO로 변환
     private UserResponse convertToDto(User user) {
         return UserResponse.builder()
-                .userId(user.getUserId())
+                .userId(user.getUser_id())
                 .username(user.getUsername())
                 .email(user.getEmail())
                 .nickname(user.getNickname())

@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class InquirySvc {
+public class GameInquirySvc {
     private final InquiryRepository inquiryRepository;
     
     @Autowired
-    public InquirySvc(InquiryRepository inquiryRepository) {
+    public GameInquirySvc(InquiryRepository inquiryRepository) {
         this.inquiryRepository = inquiryRepository;
     }
     
@@ -22,7 +22,7 @@ public class InquirySvc {
         inquiry.setUser(user);
         inquiry.setTitle(dto.getTitle());
         inquiry.setContent(dto.getContent());
-        inquiry.setIsAnswered(false);
+        inquiry.setAnswered(false);
 
         inquiryRepository.save(inquiry);
         return;

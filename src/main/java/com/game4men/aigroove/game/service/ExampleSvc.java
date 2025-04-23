@@ -21,11 +21,6 @@ public class ExampleSvc {
         return userRepository.findAll();
     }
     
-    // ID로 상품 조회
-    public Optional<User> getProductById(Long id) {
-        return userRepository.findById(id);
-    }
-    
     // 상품 저장 (생성 또는 수정)
     public User saveProduct(User product) {
         return userRepository.save(product);
@@ -33,7 +28,7 @@ public class ExampleSvc {
     
     // 상품 삭제
     public void deleteProduct(Long id) {
-        userRepository.deleteById(id);
+        //userRepository.deleteById(id);
     }
     
 }
