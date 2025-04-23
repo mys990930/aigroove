@@ -45,4 +45,9 @@ public class UserSvc {
         
         userRepository.save(user);
     }
+
+    public void deleteAccount(int user_id){
+        long id = (long)user_id;
+        userRepository.deleteById(id);
+    }
 }
