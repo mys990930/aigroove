@@ -31,11 +31,11 @@ public class LoginSvc {
                 .orElse(null);
 
         if (admin == null || !passwordEncoder.matches(request.getPassword(), admin.getHashedPassword())) {
-            return ResponseEntity.ok(new LoginResponse(401, "", "")); // 인증 실패
+            return ResponseEntity.ok(new LoginResponse(401, "", "",-1)); // 인증 실패
         }
 
         String token = jwtUtil.generateToken(admin.getUsername());
-        return ResponseEntity.ok(new LoginResponse(201, token, admin.getName())); // 성공
+        return ResponseEntity.ok(new LoginResponse(201, token, admin.getName(),admin.getAdminId())); // 성공
     }
 
     /* 2. 회원가입 처리 */

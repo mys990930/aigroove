@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/admin")
 public class LoginController {
@@ -31,4 +34,20 @@ public class LoginController {
     public ResponseEntity<SignupResponse> signup(@RequestBody SignupRequest request) {
         return loginSvc.signup(request);
     }
-} 
+
+    /* 3. 로그아웃 기능 처리 */
+    @PostMapping("/logout")
+    public ResponseEntity<Map<String, Object>> logout() {
+        Map<String, Object> response = new HashMap<>();
+        try {
+            // 여기에 로그아웃 관련 추가 로직이 필요하다면 구현
+            response.put("result_code", 200);
+            response.put("message", "Logout successful");
+        } catch (Exception e) {
+            response.put("result_code", 400);
+            response.put("message", "Logout failed: " + e.getMessage());
+            return ResponseEntity.badRequest().body(response);
+        }
+        return ResponseEntity.ok(response);
+    }
+}

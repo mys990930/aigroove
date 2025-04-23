@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class DatasetInfo {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "dataset_id")
     private Integer datasetId;
 

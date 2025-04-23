@@ -49,6 +49,7 @@ public class NoticeSvc {
     // 3. 공지사항 작성
     @Transactional
     public Notice createNotice(String title, String content, Admin author) {
+
         // 콘솔에 title과 content 값 출력
         Notice notice = new Notice();
         notice.setTitle(title);

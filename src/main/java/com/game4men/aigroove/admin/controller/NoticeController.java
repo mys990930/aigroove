@@ -83,8 +83,7 @@ public class NoticeController {
         Map<String, Object> response = new HashMap<>();
         try {
             String adminId = request.get("admin_id");
-            System.out.println("Admin ID from localStorage: " + adminId);
-            
+
             Admin author = adminService.findAdmin(Integer.parseInt(adminId));
             Notice notice = noticeService.createNotice(
                     request.get("title"),

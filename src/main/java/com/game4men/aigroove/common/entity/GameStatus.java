@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GameStatus {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "status_id")
     private Integer statusId;
 

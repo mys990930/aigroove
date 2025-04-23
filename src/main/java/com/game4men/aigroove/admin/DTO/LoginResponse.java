@@ -14,4 +14,5 @@ public class LoginResponse {
     private int result_code;
     private String login_token;
     private String admin_name;
+    private int admin_id;
 } 
