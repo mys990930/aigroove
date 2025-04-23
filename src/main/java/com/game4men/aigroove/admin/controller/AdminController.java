@@ -29,6 +29,7 @@ public class AdminController {
     // 2. 관리자 삭제(관리자 승인 거절)
     @DeleteMapping("/delete")
     public ResponseEntity<Map<String, Object>> deleteAdmin(@RequestParam("admin_id") Integer adminId) {
+        System.out.println("deleteAdmin: " + adminId + "");
         Map<String, Object> response = new HashMap<>();
         try {
             adminService.deleteAdmin(adminId);

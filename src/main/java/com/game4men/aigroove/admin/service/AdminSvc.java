@@ -38,10 +38,6 @@ public class AdminSvc {
     public void approveAdmin(Integer adminId) {
         Admin admin = adminRepository.findById(adminId)
                 .orElseThrow(() -> new IllegalArgumentException("해당 관리자를 찾을 수 없습니다"));
-        
-        if (admin.getSignupDate() != null) {
-            throw new IllegalArgumentException("이미 승인된 관리자입니다.");
-        }
 
         admin.setSignupDate(LocalDate.now());
         adminRepository.save(admin);

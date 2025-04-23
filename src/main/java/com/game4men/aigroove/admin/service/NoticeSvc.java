@@ -4,6 +4,7 @@ import com.game4men.aigroove.common.entity.Admin;
 import com.game4men.aigroove.common.entity.Notice;
 import com.game4men.aigroove.common.repository.NoticeRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -37,7 +38,7 @@ public class NoticeSvc {
 
     // 1. 공지사항 목록 조회
     public List<Notice> findAllNotices() {
-        return noticeRepository.findAll();
+        return noticeRepository.findAll(Sort.by(Sort.Direction.DESC, "noticeId"));
     }
 
     // 2. 공지사항 상세 조회
@@ -61,7 +62,7 @@ public class NoticeSvc {
         notice.setContent(content);
         notice.setAuthor(author);
         notice.setCreatedAt(LocalDateTime.now());
-        
+
         return noticeRepository.save(notice);
     }
 

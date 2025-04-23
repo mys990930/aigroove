@@ -34,6 +34,10 @@ public class LoginSvc {
             return ResponseEntity.ok(new LoginResponse(401, "", "",-1)); // 인증 실패
         }
 
+        if(admin.getSignupDate() == null) {
+            return ResponseEntity.ok(new LoginResponse(402, "", "", -1));
+        }
+
         String token = jwtUtil.generateToken(admin.getUsername());
         return ResponseEntity.ok(new LoginResponse(201, token, admin.getName(),admin.getAdminId())); // 성공
     }
@@ -51,12 +55,6 @@ public class LoginSvc {
         admin.setHashedPassword(passwordEncoder.encode(request.getPassword()));
         admin.setName(request.getName());
         admin.setBirth(request.getBirth());
-        
-        // 3. 관리자 ID 생성 (마지막 ID + 1)
-        Integer lastAdminId = loginRepository.findTopByOrderByAdminIdDesc()
-                .map(Admin::getAdminId)
-                .orElse(0);
-        admin.setAdminId(lastAdminId + 1);
 
         // 4. 저장
         try {

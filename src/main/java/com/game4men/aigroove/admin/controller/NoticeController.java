@@ -2,9 +2,6 @@ package com.game4men.aigroove.admin.controller;
 
 import com.game4men.aigroove.common.entity.Admin;
 import com.game4men.aigroove.common.entity.Notice;
-
-import io.swagger.v3.oas.annotations.tags.Tag;
-
 import com.game4men.aigroove.admin.service.AdminSvc;
 import com.game4men.aigroove.admin.service.NoticeSvc;
 import jakarta.validation.Valid;
@@ -22,7 +19,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/admin/notice")
-@Tag(name = "관리자 - 공지사항 관리", description = "공지사항 관리 API")
 public class NoticeController {
     private final NoticeSvc noticeService;
     private final AdminSvc adminService;
@@ -71,7 +67,7 @@ public class NoticeController {
             noticeData.put("author_admin_id", notice.getAuthor().getAdminId());
             noticeData.put("created_at", notice.getCreatedAt());
 
-            response.put("result_code", 200);
+            response.put("result_code", 201);
             response.put("notice", noticeData);
         } catch (Exception e) {
             response.put("result_code", 400);
@@ -88,12 +84,23 @@ public class NoticeController {
         try {
             String adminId = request.get("admin_id");
 
+            String title = request.get("title");
+            String content = request.get("content");
+            
+            if (title == null || title.isEmpty() || content == null || content.isEmpty()) {
+                response.put("result_code", 400);
+                response.put("message", "Title and content are required");
+                return ResponseEntity.badRequest().body(response);
+            }
+
             Admin author = adminService.findAdmin(Integer.parseInt(adminId));
-            Notice notice = noticeService.createNotice(
-                    request.get("title"),
-                    request.get("content"),
-                    author
-            );
+            if (author == null) {
+                response.put("result_code", 400);
+                response.put("message", "Admin not found");
+                return ResponseEntity.badRequest().body(response);
+            }
+
+            Notice notice = noticeService.createNotice(title, content, author);
 
             Map<String, Object> noticeData = new HashMap<>();
             noticeData.put("notice_id", notice.getNoticeId());
@@ -104,6 +111,10 @@ public class NoticeController {
 
             response.put("result_code", 200);
             response.put("notice", noticeData);
+        } catch (NumberFormatException e) {
+            response.put("result_code", 400);
+            response.put("message", "Invalid admin ID format");
+            return ResponseEntity.badRequest().body(response);
         } catch (Exception e) {
             response.put("result_code", 400);
             response.put("message", "Failed to create notice: " + e.getMessage());

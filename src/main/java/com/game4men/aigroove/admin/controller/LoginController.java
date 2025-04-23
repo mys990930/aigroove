@@ -37,9 +37,16 @@ public class LoginController {
 
     /* 3. 로그아웃 기능 처리 */
     @PostMapping("/logout")
-    public ResponseEntity<Map<String, Object>> logout() {
+    public ResponseEntity<Map<String, Object>> logout(@RequestBody Map<String, String> request) {
         Map<String, Object> response = new HashMap<>();
         try {
+            String adminId = request.get("admin_id");
+            if (adminId == null || adminId.isEmpty()) {
+                response.put("result_code", 400);
+                response.put("message", "Admin ID is required");
+                return ResponseEntity.badRequest().body(response);
+            }
+            
             // 여기에 로그아웃 관련 추가 로직이 필요하다면 구현
             response.put("result_code", 200);
             response.put("message", "Logout successful");
