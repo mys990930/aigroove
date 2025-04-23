@@ -3,6 +3,8 @@ import com.game4men.aigroove.game.DTO.GameRoomDTO;
 import com.game4men.aigroove.game.DTO.PlayResultDTO;
 import com.game4men.aigroove.game.DTO.PlayStatusDTO;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/game/song")
+@Tag(name = "o[개발중]곡 등록 API", description = "곡 등록 관련 API")
 public class SongController {
 
     // @GetMapping("/thumbnail")

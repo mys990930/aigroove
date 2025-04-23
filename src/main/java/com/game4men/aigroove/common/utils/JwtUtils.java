@@ -1,12 +1,8 @@
 package com.game4men.aigroove.common.utils;
 
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.ExpiredJwtException;
-import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
 
@@ -15,12 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import java.security.Key;
-import java.util.Base64;
-
 
 @Component
 public class JwtUtils {
@@ -32,12 +23,10 @@ public class JwtUtils {
     private int jwtExpiration;
 
     private Key key;
-    
+
     @PostConstruct
-    public void init() {
-        // 애플리케이션 시작 시 키를 한 번만 생성하여 재사용
+    public void init(){
         this.key = Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
-        System.out.println("JWT Key initialized successfully");
     }
     
     public String generateToken(String username) {
@@ -48,13 +37,13 @@ public class JwtUtils {
                 .setSubject(username)
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(SignatureAlgorithm.HS256, jwtSecret.getBytes(StandardCharsets.UTF_8))  // 초기화된 키 사용
+                .signWith(key)  // 초기화된 키 사용
                 .compact();
     }
 
     public String getUserIdFromToken(String token) {
         Claims claims = Jwts.parserBuilder()
-                .setSigningKey(jwtSecret.getBytes(StandardCharsets.UTF_8))
+                .setSigningKey(key)
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
@@ -63,7 +52,7 @@ public class JwtUtils {
 
     public String getUsernameFromToken(String token) {
         Claims claims = Jwts.parserBuilder()
-                .setSigningKey(jwtSecret.getBytes(StandardCharsets.UTF_8))
+                .setSigningKey(key)
                 .build()
                 .parseClaimsJws(token)
                 .getBody();
@@ -113,7 +102,7 @@ public class JwtUtils {
         try {
             // 같은 키 사용
             Jwts.parserBuilder()
-                .setSigningKey(jwtSecret.getBytes(StandardCharsets.UTF_8))  // 초기화된 키 사용
+                .setSigningKey(key)  // 초기화된 키 사용
                 .build()
                 .parseClaimsJws(token);
             
