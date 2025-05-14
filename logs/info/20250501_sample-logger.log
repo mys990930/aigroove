@@ -1,0 +1,830 @@
+2025-05-01 13:30:43.153 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 16064 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 13:30:43.155 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 13:30:43.210 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 13:30:43.210 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 13:30:44.330 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 13:30:44.445 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 102 ms. Found 11 JPA repository interfaces.
+2025-05-01 13:30:45.147 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 13:30:45.162 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:30:45.165 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 13:30:45.166 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 13:30:45.230 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 13:30:45.230 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2019 ms
+2025-05-01 13:30:45.394 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 13:30:45.479 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 13:30:45.534 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 13:30:45.906 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 13:30:45.949 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 13:30:46.021 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@3dce8927
+2025-05-01 13:30:46.022 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 13:30:46.087 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 13:30:47.641 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 13:30:47.824 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 13:30:48.597 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 13:30:48.686 [INFO] [restartedMain] [o.s.b.a.w.s.WelcomePageHandlerMapping] - Adding welcome page: class path resource [static/index.html]
+2025-05-01 13:30:49.638 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 13:30:49.977 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 13:30:50.006 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:30:50.057 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 13:30:50.069 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 7.712 seconds (process running for 11.061)
+2025-05-01 13:31:08.506 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 13:31:08.506 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 13:31:08.510 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 4 ms
+2025-05-01 13:32:43.869 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 11 class path changes (0 additions, 7 deletions, 4 modifications)
+2025-05-01 13:32:43.873 [INFO] [Thread-5] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 13:32:43.874 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:32:44.021 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 13:32:44.021 [INFO] [Thread-5] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:32:44.027 [INFO] [Thread-5] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 13:32:44.037 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 13:32:44.040 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 13:32:44.156 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 16064 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 13:32:44.157 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 13:32:44.639 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 13:32:44.725 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 83 ms. Found 11 JPA repository interfaces.
+2025-05-01 13:32:44.955 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 13:32:44.956 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:32:44.956 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 13:32:44.957 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 13:32:45.000 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 13:32:45.001 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 840 ms
+2025-05-01 13:32:45.051 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 13:32:45.056 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 13:32:45.073 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 13:32:45.075 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2025-05-01 13:32:45.079 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@53d8dda8
+2025-05-01 13:32:45.079 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2025-05-01 13:32:45.081 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 13:32:45.401 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 13:32:45.467 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 13:32:45.801 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 13:32:46.607 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 13:32:46.710 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 13:32:46.726 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 13:32:46.726 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 13:32:46.726 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 2.614 seconds (process running for 127.731)
+2025-05-01 13:32:46.726 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 14:35:14.410 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 14:35:14.410 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 14:35:14.419 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 9 ms
+2025-05-01 14:36:00.708 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 14:36:00.848 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 14:36:00.850 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 14:36:00.852 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2025-05-01 14:36:00.853 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2025-05-01 14:36:04.918 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 2732 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 14:36:04.919 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 14:36:04.971 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 14:36:04.971 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 14:36:07.101 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 14:36:07.274 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 149 ms. Found 11 JPA repository interfaces.
+2025-05-01 14:36:08.111 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 14:36:08.123 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 14:36:08.125 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 14:36:08.125 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 14:36:08.173 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 14:36:08.173 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3201 ms
+2025-05-01 14:36:08.300 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 14:36:08.417 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 14:36:08.458 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 14:36:08.808 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 14:36:08.838 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 14:36:08.895 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@f1cb112
+2025-05-01 14:36:08.899 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 14:36:08.962 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 14:36:10.157 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 14:36:10.260 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 14:36:12.225 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 14:36:16.863 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 14:36:17.385 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 14:36:17.412 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 14:36:17.438 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 14:36:17.453 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 13.457 seconds (process running for 14.321)
+2025-05-01 14:36:25.381 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 14:36:25.381 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 14:36:25.382 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2025-05-01 19:24:07.042 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 12992 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 19:24:07.045 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 19:24:07.089 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 19:24:07.089 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 19:24:08.096 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 19:24:08.200 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 92 ms. Found 11 JPA repository interfaces.
+2025-05-01 19:24:08.851 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 19:24:08.862 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 19:24:08.864 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 19:24:08.864 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 19:24:08.919 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 19:24:08.919 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1830 ms
+2025-05-01 19:24:09.038 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 19:24:09.108 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 19:24:09.147 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 19:24:09.425 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 19:24:09.454 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 19:24:09.501 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@acb8ff9
+2025-05-01 19:24:09.503 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 19:24:09.560 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 19:24:10.709 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 19:24:11.016 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 19:24:11.752 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 19:24:39.494 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 19:39:10.285 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 19:39:10.363 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 19:39:10.477 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 19:39:10.559 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 904.055 seconds (process running for 904.864)
+2025-05-01 19:39:11.821 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 19:39:11.821 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 19:39:11.823 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2025-05-01 20:07:49.412 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:07:49.582 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:07:49.591 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:07:49.595 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 20:07:49.600 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 20:07:53.879 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 20656 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:07:53.881 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:07:53.934 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 20:07:53.934 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 20:07:54.930 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:07:55.035 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 90 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:07:55.776 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:07:55.854 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1919 ms
+2025-05-01 20:07:55.991 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:07:56.046 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 20:07:56.080 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:07:56.505 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:07:56.535 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 20:07:56.586 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@14b23f00
+2025-05-01 20:07:56.589 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 20:07:56.652 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:07:57.831 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:07:57.932 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:07:58.649 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:07:59.684 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:07:59.996 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:08:00.050 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:08:00.061 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 6.881 seconds (process running for 7.676)
+2025-05-01 20:08:00.063 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:08:00.353 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:08:00.359 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:08:00.362 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 20:08:00.367 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 20:08:04.502 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 20032 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:08:04.503 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:08:04.556 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 20:08:04.557 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 20:08:05.787 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:08:05.943 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 134 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:08:06.605 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:08:06.617 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:08:06.619 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:08:06.619 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:08:06.684 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:08:06.686 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2127 ms
+2025-05-01 20:08:06.820 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:08:06.900 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 20:08:06.932 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:08:07.285 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:08:07.317 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 20:08:07.376 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@466bb82
+2025-05-01 20:08:07.380 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 20:08:07.439 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:08:08.687 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:08:08.782 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:08:09.502 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:08:10.513 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:08:10.942 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:08:10.987 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:08:11.050 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:08:11.074 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 7.269 seconds (process running for 8.238)
+2025-05-01 20:08:19.224 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 20:08:19.224 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 20:08:19.229 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 3 ms
+2025-05-01 20:46:59.003 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-05-01 20:46:59.007 [INFO] [Thread-5] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:46:59.009 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:46:59.333 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:46:59.333 [INFO] [Thread-5] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:46:59.348 [INFO] [Thread-5] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:46:59.355 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 20:46:59.372 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 20:46:59.591 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 20032 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:46:59.592 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:47:04.237 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:47:04.626 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 378 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:47:07.235 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:47:07.236 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:07.240 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:47:07.282 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:47:08.053 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:47:08.054 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 8455 ms
+2025-05-01 20:47:09.408 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:47:09.445 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:47:09.519 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:47:09.522 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2025-05-01 20:47:09.530 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@1b0998b2
+2025-05-01 20:47:09.532 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2025-05-01 20:47:09.535 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:47:10.126 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:47:10.196 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:47:10.638 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:47:12.549 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:47:12.731 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:47:12.754 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:12.759 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:47:12.773 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 13.309 seconds (process running for 2349.938)
+2025-05-01 20:47:12.777 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:47:14.263 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-05-01 20:47:14.265 [INFO] [Thread-7] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:47:14.267 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:14.511 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:47:14.512 [INFO] [Thread-7] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:14.515 [INFO] [Thread-7] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:47:14.515 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2025-05-01 20:47:14.517 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2025-05-01 20:47:14.614 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 20032 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:47:14.614 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:47:14.874 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:47:14.913 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 37 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:47:15.049 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:47:15.050 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:15.050 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:47:15.050 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:47:15.074 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:47:15.074 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 457 ms
+2025-05-01 20:47:15.111 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:47:15.115 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:47:15.130 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:47:15.132 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2025-05-01 20:47:15.136 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-3 - Added connection org.mariadb.jdbc.MariaDbConnection@1eec3b18
+2025-05-01 20:47:15.136 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2025-05-01 20:47:15.137 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:47:15.336 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:47:15.401 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:47:15.616 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:47:16.407 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:47:16.577 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:47:16.594 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:47:16.600 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:47:16.613 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 2.03 seconds (process running for 2353.778)
+2025-05-01 20:47:16.616 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:47:28.301 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:47:28.483 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:47:28.486 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:47:28.486 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2025-05-01 20:47:28.488 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2025-05-01 20:49:46.086 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:49:46.089 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:49:46.158 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 20:49:46.158 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 20:49:47.329 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:49:47.428 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 87 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:49:48.110 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:49:48.123 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:49:48.125 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:49:48.126 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:49:48.187 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:49:48.188 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2029 ms
+2025-05-01 20:49:48.356 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:49:48.436 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 20:49:48.485 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:49:48.874 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:49:48.907 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 20:49:48.959 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@7a26070f
+2025-05-01 20:49:48.961 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 20:49:49.024 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:49:50.412 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:49:50.516 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:49:51.398 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:49:52.556 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:49:52.909 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:49:52.940 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:49:52.968 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:49:52.984 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 7.702 seconds (process running for 9.692)
+2025-05-01 20:49:59.496 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 20:49:59.496 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 20:49:59.498 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2025-05-01 20:51:04.110 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2025-05-01 20:51:04.116 [INFO] [Thread-5] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:04.119 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:04.413 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:04.413 [INFO] [Thread-5] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:04.423 [INFO] [Thread-5] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:04.428 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 20:51:04.434 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 20:51:04.579 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:04.581 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:05.464 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:05.565 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 98 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:06.058 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:06.060 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:06.060 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:06.062 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:06.198 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:06.198 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1612 ms
+2025-05-01 20:51:06.492 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:06.534 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:06.798 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:06.821 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2025-05-01 20:51:06.846 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@6f61bf2b
+2025-05-01 20:51:06.846 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2025-05-01 20:51:06.848 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:08.846 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:08.949 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:09.581 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:11.488 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:11.768 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:11.790 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:11.795 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:11.809 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 7.293 seconds (process running for 88.516)
+2025-05-01 20:51:11.812 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:51:13.250 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2025-05-01 20:51:13.253 [INFO] [Thread-7] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:13.254 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:13.430 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:13.432 [INFO] [Thread-7] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:13.436 [INFO] [Thread-7] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:13.436 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2025-05-01 20:51:13.439 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2025-05-01 20:51:13.537 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:13.537 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:13.809 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:13.842 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:13.957 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:13.958 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:13.958 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:13.958 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:13.981 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:13.982 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 443 ms
+2025-05-01 20:51:14.019 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:14.023 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:14.034 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:14.035 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2025-05-01 20:51:14.038 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-3 - Added connection org.mariadb.jdbc.MariaDbConnection@6d361fa2
+2025-05-01 20:51:14.038 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2025-05-01 20:51:14.039 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:14.205 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:14.267 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:14.482 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:15.051 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:15.141 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:15.151 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:15.155 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:15.159 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 1.654 seconds (process running for 91.868)
+2025-05-01 20:51:15.162 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:51:20.783 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2025-05-01 20:51:20.785 [INFO] [Thread-11] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:20.785 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:21.032 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:21.033 [INFO] [Thread-11] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:21.036 [INFO] [Thread-11] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:21.037 [INFO] [Thread-11] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2025-05-01 20:51:21.040 [INFO] [Thread-11] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.
+2025-05-01 20:51:21.150 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:21.151 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:21.777 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:21.847 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 69 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:22.083 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:22.087 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:22.087 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:22.087 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:22.128 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:22.128 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 976 ms
+2025-05-01 20:51:22.178 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:22.183 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:22.201 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:22.203 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Starting...
+2025-05-01 20:51:22.206 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-4 - Added connection org.mariadb.jdbc.MariaDbConnection@5f67709f
+2025-05-01 20:51:22.206 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Start completed.
+2025-05-01 20:51:22.207 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:22.526 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:22.654 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:23.234 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:23.933 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:24.089 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:24.105 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:24.110 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:24.118 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 3.014 seconds (process running for 100.826)
+2025-05-01 20:51:24.120 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:51:25.544 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2025-05-01 20:51:25.549 [INFO] [Thread-15] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:25.550 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:25.769 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:25.770 [INFO] [Thread-15] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:25.772 [INFO] [Thread-15] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:25.773 [INFO] [Thread-15] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown initiated...
+2025-05-01 20:51:25.776 [INFO] [Thread-15] [com.zaxxer.hikari.HikariDataSource] - HikariPool-4 - Shutdown completed.
+2025-05-01 20:51:25.897 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:25.897 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:26.240 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:26.270 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 29 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:26.381 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:26.382 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:26.382 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:26.382 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:26.412 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:26.412 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 513 ms
+2025-05-01 20:51:26.457 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:26.460 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:26.479 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:26.482 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Starting...
+2025-05-01 20:51:26.487 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-5 - Added connection org.mariadb.jdbc.MariaDbConnection@5d6696dc
+2025-05-01 20:51:26.487 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Start completed.
+2025-05-01 20:51:26.488 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:26.666 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:26.738 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:26.973 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:27.539 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:27.644 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:27.655 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:27.658 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:27.665 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 1.804 seconds (process running for 104.373)
+2025-05-01 20:51:27.667 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:51:33.358 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2025-05-01 20:51:33.360 [INFO] [Thread-19] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:33.362 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:33.820 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:33.820 [INFO] [Thread-19] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:33.826 [INFO] [Thread-19] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:33.827 [INFO] [Thread-19] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown initiated...
+2025-05-01 20:51:33.830 [INFO] [Thread-19] [com.zaxxer.hikari.HikariDataSource] - HikariPool-5 - Shutdown completed.
+2025-05-01 20:51:33.972 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:33.973 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:35.136 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:35.308 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 168 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:35.724 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:35.726 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:35.726 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:35.727 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:35.796 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:35.797 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1819 ms
+2025-05-01 20:51:35.903 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:35.912 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:35.943 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:35.945 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-6 - Starting...
+2025-05-01 20:51:35.949 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-6 - Added connection org.mariadb.jdbc.MariaDbConnection@3513d2eb
+2025-05-01 20:51:35.950 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-6 - Start completed.
+2025-05-01 20:51:35.951 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:36.373 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:36.455 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:36.792 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:37.469 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:37.626 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:37.638 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:37.641 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:37.646 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 3.718 seconds (process running for 114.354)
+2025-05-01 20:51:37.647 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:51:39.177 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
+2025-05-01 20:51:39.180 [INFO] [Thread-23] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:51:39.180 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:39.345 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:51:39.345 [INFO] [Thread-23] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:39.347 [INFO] [Thread-23] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:39.347 [INFO] [Thread-23] [com.zaxxer.hikari.HikariDataSource] - HikariPool-6 - Shutdown initiated...
+2025-05-01 20:51:39.348 [INFO] [Thread-23] [com.zaxxer.hikari.HikariDataSource] - HikariPool-6 - Shutdown completed.
+2025-05-01 20:51:39.439 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:51:39.439 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:51:39.685 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:51:39.716 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 30 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:51:39.831 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:51:39.832 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:39.832 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:51:39.832 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:51:39.858 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:51:39.858 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 417 ms
+2025-05-01 20:51:39.889 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:51:39.893 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:51:39.902 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:51:39.903 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-7 - Starting...
+2025-05-01 20:51:39.905 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-7 - Added connection org.mariadb.jdbc.MariaDbConnection@79f3a53c
+2025-05-01 20:51:39.905 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-7 - Start completed.
+2025-05-01 20:51:39.906 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:51:40.069 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:51:40.119 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:51:40.334 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:51:41.235 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:51:41.445 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:51:41.457 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:51:41.460 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:51:41.466 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 2.061 seconds (process running for 118.174)
+2025-05-01 20:51:41.467 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:53:23.923 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-05-01 20:53:23.959 [INFO] [Thread-27] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:53:23.967 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:53:24.864 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:53:24.866 [INFO] [Thread-27] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:53:24.871 [INFO] [Thread-27] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:53:24.871 [INFO] [Thread-27] [com.zaxxer.hikari.HikariDataSource] - HikariPool-7 - Shutdown initiated...
+2025-05-01 20:53:24.877 [INFO] [Thread-27] [com.zaxxer.hikari.HikariDataSource] - HikariPool-7 - Shutdown completed.
+2025-05-01 20:53:25.088 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 27212 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:53:25.088 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:53:25.432 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:53:25.465 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 32 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:53:25.574 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:53:25.575 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:53:25.575 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:53:25.575 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:53:25.601 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:53:25.601 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 508 ms
+2025-05-01 20:53:25.632 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:53:25.635 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:53:25.644 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:53:25.645 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-8 - Starting...
+2025-05-01 20:53:25.647 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-8 - Added connection org.mariadb.jdbc.MariaDbConnection@323d1c72
+2025-05-01 20:53:25.647 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-8 - Start completed.
+2025-05-01 20:53:25.649 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:53:25.787 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:53:25.842 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:53:26.041 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:53:26.611 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:53:26.706 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:53:26.717 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:53:26.720 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:53:26.726 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 1.727 seconds (process running for 223.434)
+2025-05-01 20:53:26.728 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 20:54:03.329 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 20:54:03.527 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 20:54:03.531 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:54:03.531 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-8 - Shutdown initiated...
+2025-05-01 20:54:03.534 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-8 - Shutdown completed.
+2025-05-01 20:54:08.233 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 22840 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 20:54:08.235 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 20:54:08.290 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 20:54:08.290 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 20:54:10.589 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 20:54:10.735 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 128 ms. Found 11 JPA repository interfaces.
+2025-05-01 20:54:11.602 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 20:54:11.626 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:54:11.629 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 20:54:11.629 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 20:54:11.722 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 20:54:11.723 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3432 ms
+2025-05-01 20:54:11.952 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 20:54:12.044 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 20:54:12.099 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 20:54:12.508 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 20:54:12.544 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 20:54:12.600 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@51396b09
+2025-05-01 20:54:12.602 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 20:54:12.700 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 20:54:14.006 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 20:54:14.142 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 20:54:15.848 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 20:54:19.846 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 20:54:20.749 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 20:54:20.792 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 20:54:20.849 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 20:54:20.869 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 13.397 seconds (process running for 14.581)
+2025-05-01 20:54:36.926 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 20:54:36.926 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 20:54:36.928 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2025-05-01 21:06:25.164 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 21:06:25.340 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 21:06:25.347 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:06:25.351 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:06:25.353 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 21:06:33.580 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 26596 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 21:06:33.583 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:06:33.681 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-01 21:06:33.682 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-01 21:06:34.976 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 21:06:35.115 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 124 ms. Found 11 JPA repository interfaces.
+2025-05-01 21:06:35.803 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 21:06:35.816 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:06:35.818 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 21:06:35.818 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 21:06:35.886 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:06:35.888 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 2206 ms
+2025-05-01 21:06:36.038 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:06:36.096 [INFO] [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-01 21:06:36.132 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 21:06:36.464 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 21:06:36.508 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-05-01 21:06:36.603 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@1007d37e
+2025-05-01 21:06:36.608 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-05-01 21:06:36.702 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:06:37.879 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:06:37.981 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:06:38.773 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 21:06:39.929 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 21:06:40.307 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 21:06:40.333 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:06:40.357 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 21:06:40.369 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 8.086 seconds (process running for 10.471)
+2025-05-01 21:06:52.382 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 21:06:52.388 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 21:06:52.394 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+2025-05-01 21:16:06.595 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-05-01 21:16:06.602 [INFO] [Thread-5] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 21:16:06.605 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:07.148 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 21:16:07.149 [INFO] [Thread-5] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:07.161 [INFO] [Thread-5] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:16:07.169 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2025-05-01 21:16:07.175 [INFO] [Thread-5] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2025-05-01 21:16:07.363 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 26596 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 21:16:07.364 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:16:08.180 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 21:16:08.254 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 72 ms. Found 11 JPA repository interfaces.
+2025-05-01 21:16:08.555 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 21:16:08.558 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:08.559 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 21:16:08.559 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 21:16:08.615 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:16:08.615 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1237 ms
+2025-05-01 21:16:08.692 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:16:08.701 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 21:16:08.728 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 21:16:08.730 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Starting...
+2025-05-01 21:16:08.734 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-2 - Added connection org.mariadb.jdbc.MariaDbConnection@520213b0
+2025-05-01 21:16:08.735 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Start completed.
+2025-05-01 21:16:08.737 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:16:09.248 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:16:09.380 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:16:10.002 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 21:16:11.202 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 21:16:11.814 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 21:16:11.852 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:11.862 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 21:16:11.878 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 4.598 seconds (process running for 581.98)
+2025-05-01 21:16:11.883 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 21:16:13.522 [INFO] [File Watcher] [o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] - Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2025-05-01 21:16:13.526 [INFO] [Thread-7] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 21:16:13.526 [INFO] [tomcat-shutdown] [o.a.coyote.http11.Http11NioProtocol] - Pausing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:14.028 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 21:16:14.029 [INFO] [Thread-7] [o.a.coyote.http11.Http11NioProtocol] - Stopping ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:14.035 [INFO] [Thread-7] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:16:14.037 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown initiated...
+2025-05-01 21:16:14.042 [INFO] [Thread-7] [com.zaxxer.hikari.HikariDataSource] - HikariPool-2 - Shutdown completed.
+2025-05-01 21:16:14.204 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication using Java 17.0.14 with PID 26596 (C:\Users\hunei\admin\v0.5\build\classes\java\main started by hunei in C:\Users\hunei\admin\v0.5)
+2025-05-01 21:16:14.205 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 21:16:14.837 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 21:16:14.907 [INFO] [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 69 ms. Found 11 JPA repository interfaces.
+2025-05-01 21:16:15.086 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 8080 (http)
+2025-05-01 21:16:15.109 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:15.109 [INFO] [restartedMain] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-05-01 21:16:15.110 [INFO] [restartedMain] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-01 21:16:15.147 [INFO] [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-05-01 21:16:15.148 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 939 ms
+2025-05-01 21:16:15.205 [INFO] [restartedMain] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 21:16:15.210 [INFO] [restartedMain] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-05-01 21:16:15.235 [INFO] [restartedMain] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 21:16:15.236 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Starting...
+2025-05-01 21:16:15.240 [INFO] [restartedMain] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-3 - Added connection org.mariadb.jdbc.MariaDbConnection@3f4ad896
+2025-05-01 21:16:15.240 [INFO] [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Start completed.
+2025-05-01 21:16:15.241 [INFO] [restartedMain] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 11.7.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 21:16:15.515 [INFO] [restartedMain] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 21:16:15.635 [INFO] [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:16:16.018 [INFO] [restartedMain] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 21:16:16.753 [INFO] [restartedMain] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-05-01 21:16:16.917 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2025-05-01 21:16:16.939 [INFO] [restartedMain] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 21:16:16.942 [INFO] [restartedMain] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 21:16:16.951 [INFO] [restartedMain] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 2.814 seconds (process running for 587.052)
+2025-05-01 21:16:16.953 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
+2025-05-01 21:18:33.363 [INFO] [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 21:18:33.363 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-05-01 21:18:33.365 [INFO] [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 2 ms
+2025-05-01 21:33:34.233 [INFO] [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 21:33:34.429 [INFO] [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] - Graceful shutdown complete
+2025-05-01 21:33:34.431 [INFO] [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 21:33:34.432 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown initiated...
+2025-05-01 21:33:34.432 [INFO] [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] - HikariPool-3 - Shutdown completed.

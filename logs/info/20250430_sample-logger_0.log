@@ -1,0 +1,37 @@
+2025-04-30 21:59:39.852 [INFO] [main] [c.g.aigroove.AigrooveApplication] - Starting AigrooveApplication v0.0.1-SNAPSHOT using Java 17.0.14 with PID 142096 (/home/t25102/v0.5/build/libs/aigroove-0.0.1-SNAPSHOT.jar started by t25102 in /home/t25102/v0.5)
+2025-04-30 21:59:39.853 [INFO] [main] [c.g.aigroove.AigrooveApplication] - No active profile set, falling back to 1 default profile: "default"
+2025-04-30 21:59:40.439 [INFO] [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-30 21:59:40.493 [INFO] [main] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 46 ms. Found 11 JPA repository interfaces.
+2025-04-30 21:59:40.899 [INFO] [main] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat initialized with port 60002 (http)
+2025-04-30 21:59:40.908 [INFO] [main] [o.a.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-60002"]
+2025-04-30 21:59:40.910 [INFO] [main] [o.a.catalina.core.StandardService] - Starting service [Tomcat]
+2025-04-30 21:59:40.910 [INFO] [main] [o.a.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-30 21:59:40.939 [INFO] [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2025-04-30 21:59:40.939 [INFO] [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 1057 ms
+2025-04-30 21:59:41.045 [INFO] [main] [o.h.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-30 21:59:41.089 [INFO] [main] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-30 21:59:41.125 [INFO] [main] [o.h.c.i.RegionFactoryInitiator] - HHH000026: Second-level cache disabled
+2025-04-30 21:59:41.357 [INFO] [main] [o.s.o.j.p.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-30 21:59:41.384 [INFO] [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2025-04-30 21:59:41.430 [INFO] [main] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.mariadb.jdbc.MariaDbConnection@333e5fb6
+2025-04-30 21:59:41.432 [INFO] [main] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2025-04-30 21:59:41.480 [INFO] [main] [o.hibernate.orm.connections.pooling] - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-30 21:59:42.194 [INFO] [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-30 21:59:42.227 [INFO] [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-30 21:59:42.696 [INFO] [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-04-30 21:59:42.749 [INFO] [main] [o.s.b.a.w.s.WelcomePageHandlerMapping] - Adding welcome page: class path resource [static/index.html]
+2025-04-30 21:59:43.287 [INFO] [main] [o.s.v.b.OptionalValidatorFactoryBean] - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-30 21:59:43.490 [INFO] [main] [o.a.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-60002"]
+2025-04-30 21:59:43.500 [INFO] [main] [o.s.b.w.e.tomcat.TomcatWebServer] - Tomcat started on port 60002 (http) with context path '/'
+2025-04-30 21:59:43.511 [INFO] [main] [c.g.aigroove.AigrooveApplication] - Started AigrooveApplication in 4.063 seconds (process running for 4.348)
+2025-04-30 21:59:46.834 [INFO] [http-nio-60002-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-30 21:59:46.834 [INFO] [http-nio-60002-exec-1] [o.s.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2025-04-30 21:59:46.835 [INFO] [http-nio-60002-exec-1] [o.s.web.servlet.DispatcherServlet] - Completed initialization in 1 ms
+2025-04-30 21:59:47.812 [INFO] [http-nio-60002-exec-9] [o.s.api.AbstractOpenApiResource] - Init duration for springdoc-openapi is: 213 ms
